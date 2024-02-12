@@ -1,0 +1,4 @@
+#five-day-weather{
+    display: flex;
+    justify-content: space-evenly;
+}
