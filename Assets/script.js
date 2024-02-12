@@ -41,7 +41,6 @@ function getCurrentWeather(lat, lon) {
             return res.json()
         }
     }).then(function (data) {
-        // console.log('current', element);
             let i = 0
             let element = data.list[i];
             var htmlCard = `
@@ -82,7 +81,7 @@ function getFiveDayWeather(lat, lon) {
                 var htmlCard = `
                 <div class="card" style="width: 12rem;">
                 <div class="card-body">
-                <img src="https://openweathermap.org/img/w/${element.weather[0].icon}.png" style="width: 50%" alt="...">
+                <img src="https://openweathermap.org/img/w/${element.weather[0].icon}.png" style="width: 50%" >
                     <h5>(${element.dt_txt.split(" ")[0]})</h5>
                     <p>Temp: ${element.main.temp}°F</p>
                     <p>Wind: ${element.wind.speed}mph</p>
